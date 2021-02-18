@@ -163,53 +163,30 @@
       align-items: center;
       align-content: initial;
 
-      font-weight: 500;
-      font-size: 1em;
-
     
   }
 
 
   .main .centrado{
-    width: 65%;
+    width: 90%;
     margin: auto;
     /* background-color: hotpink; */
     
+
+  
+    
     display: flex;
     flex-flow:row nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: initial;
 
+    /* position: absolute; */
+
     
-  }
-
-  .main .foto{
-    width: 40%;
-    /* background-color:lightsalmon; */
-  }
-  .main .texto{
-    width: 55%;
-    margin: 0 1em 0 0;
-    padding: 1em;
-
-  
-    /* background-color: lightseagreen; */
-  }
-
-  .main .presentacion{
-    font-weight: 600;
-      font-size: 1.5em;
 
   }
-  .main .p{
-    margin: 1em 0;
-  }
 
-  .main .proximamente{
-    font-weight: 600;
-    margin:2em 6em 0;
-  }
 
 
   
