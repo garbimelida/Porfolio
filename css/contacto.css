@@ -246,6 +246,10 @@
     font-size: 1.3em;
   }
 
+  .main .a:hover{
+    color:var(--naranja)
+  }
+
   .main .trabajos{
     /* background-color: rgb(226, 68, 205); */
     margin: 0 1em 0 0 ;
