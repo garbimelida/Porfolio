@@ -181,11 +181,69 @@
     align-items: center;
     align-content: initial;
 
-    /* position: absolute; */
-
-    
 
   }
+
+  .main .cuadrados{
+    width: 90%;
+    /* background-color: lightskyblue; */
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: initial;
+
+    font-weight: 600;
+    font-size: 3em;
+
+  }
+
+  .main .ficha{
+    width: 25%;
+    height: 55vh;
+    
+    background-color:var(--azul);
+
+    border-radius: 10%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+
+  }
+
+
+  .main .p{
+    color: var(--fondo);
+  }
+
+  main .p:hover{
+    color:var(--naranja)
+  }
+
+
+  .main .naranja{
+    background-color: var(--naranja);
+    color:var(--azul)
+  }
+
+  .main .naranja:hover .p{
+    color: var(--azul);
+  }
+ 
+  .main .amarillo{
+    background-color: var(--medio);
+    color: var(--naranja);
+  }
+  .main .amarillo:hover .p{
+    color: var(--azul);
+  }
+
+
+
 
 
 
