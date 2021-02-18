@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --tipo1: 'Poppins', sans-serif;
+    --tipo2: 'Poppins', sans-serif;
+
+    --fondo: #faf6ed;
+    --azul: #395370;
+    --naranja: #efbb3f;
+    --claro: #fceecc;
+  }
+  
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  p a {
+    display: inline-flex;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  ::selection {
+    background-color: var(--naranja);
+    color: var(--azul);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--fondo);
+    font-size: 100%;
+    font-family: var(--tipo1);
+    color: var(--azul);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+
+
+  /* ESTO ES LA CABECERA */
+  .header{
+    width: 100%;
+    background-color: transparent;
+    padding: 1em 0 0;
+
+    position: fixed;
+
+    text-transform: uppercase;
+    font-weight: 700;
+  
+
+    &__centrado{
+      width: 90%;
+      // background-color: lawngreen;
+      margin: auto;
+      
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: initial;
+
+    }
+
+    &__h1{
+      width: 100%;
+      max-width: 5em;
+    }
+
+    &__proyectos{}
+    &__menu{
+      display: none;
+    }
+  }
+
+
+  // ESTO ES EL CUERPO
+
+  .main{
+    width: 100%;
+    height: 85vh;
+    background-color: var(--fondo);
+
+    &__centrado{
+      width: 90%;
+      // background-color: red;
+      margin:auto;
+      
+    }
+  
+  
+    &__home{
+      width: 100%;
+      min-height: 100vh;
+      padding: 2.5em;
+      background-image: url(../img/HomeColores.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: initial;
+    }
+
+    &__texto1{
+      // background-color: red;
+      font-weight: 700;
+      font-size: 2.7em;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+      
+    }
+
+    &__p1{
+      // background-color:green;
+      color:var(--claro);
+      margin: 0 .2em .5em 0;
+
+    }
+
+    &__p2{
+      // background-color: thistle;
+      margin: 0 .2em .5em .2em;
+      
+    }
+
+    &__h2{
+      // background-color:skyblue;
+      margin: 0 .1em .5em .2em;
+
+    }
+
+    &__texto2{
+
+      display: flex;
+      flex-flow:row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+      
+    }
+
+    &__h3{
+      // background-color:green;
+      color:var(--claro);
+      margin: 0 0 1em 3.1em;
+
+    }
+
+    &__h4{
+      // background-color: thistle;
+      margin: 0 .2em 1em .8em;
+      
+    }
+
+    &__h5{
+      // background-color:skyblue;
+      margin: 0 .1em 1em .4em;
+
+    }
+
+  }
+
+
+  // ESRO ES EL PIE
+
+.footer{
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  padding: 1em 0 0;
+  
+  
+
+  text-transform: uppercase;
+  font-weight: 700;
+
+
+
+  &__centrado{
+    width: 90%;
+    // background-color:greenyellow;
+    margin: auto;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+  
+
+  }
+
+  &__mi{
+    // background-color: grey;
+  }
+  &__rrss{
+    // background-color: hotpink;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+
+  }
+
+  &__red-social{
+    // background-color: khaki;
+    margin: 0 .6em;
+    font-size: 2em;
+
+
+  }
+  &__contacto{
+    // background-color: khaki;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --tipo1: "Poppins", sans-serif;
+    --tipo2: "Poppins", sans-serif;
+    --fondo:#fceecc;
+    --azul: #395370;
+    --naranja: #efbb3f;
+    --claro: #fceecc;
+  }
+  
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  p a {
+    display: inline-flex;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  ::selection {
+    background-color: var(--naranja);
+    color: var(--azul);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 100%;
+    background-color: var(--fondo);
+    font-size: 100%;
+    font-family: var(--tipo1);
+    color: var(--azul);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+
+
+
+  .header{
+      width: 100%;
+      padding: 1em 0;
+      
+      /* background-color:green; */
+
+      position: absolute;
+      z-index: 2;
+      top: 0;
+
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+    
+    
+
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  .header .centrado{
+        width: 90%;
+        
+       
+        /* background-color: lightcoral; */
+        margin: auto;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: initial;
+  }
+
+  .header .h1{
+      width: 8%;
+      /* background-color: lightcyan; */
+      
+  } 
+  header .a{
+    width: 10%;
+  }
+
+
+  .header .proyectos{
+    width: 10%;
+    
+    /* background-color: lightcyan; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: initial;
+
+  }
+
+  .header .a{
+      width: 100%;
+      /* background-color: lightblue; */
+      margin:auto;
+  }
+
+
+
+
+
+
+  .main{
+      width: 100%;
+      min-height:100vh;
+      /* background-color: rgb(32, 34, 178); */
+
+      position: relative;
+      z-index:1;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+
+    
+  }
+
+
+  .main .centrado{
+    width: 90%;
+    margin: auto;
+    /* background-color: hotpink; */
+    
+
+  
+    
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+
+    /* position: absolute; */
+
+    
+
+  }
+
+
+
+  .main .fondo{
+      width: 100%;
+      /* background-color: blue; */
+      margin: auto;
+
+      display: flex;
+      flex-flow:row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+
+  }
+
+  .main .colores{
+      width: 100%;
+      height: 44em;
+      padding: .5em 0 0 0;
+    
+  }
+
+
+
+  .main .texto{
+    /* background-color: blueviolet; */
+    margin: 0 0 5em 3.5em;
+    
+    position: absolute;
+
+    font-weight: 600;
+
+
+
+    
+  }
+
+  .main .texto1{
+      /* background-color: mediumaquamarine; */
+
+      display: flex;
+      flex-flow:row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+
+      font-size: 3em;
+
+    
+  }
+  .main .p1{
+      color: var(--claro);
+      
+  }
+  .main .p2{
+    margin: 0 .3em 0;
+  }
+  .main .h2{}
+
+  .main .texto2{
+      /* background-color:lightpink; */
+
+      display: flex;
+      flex-flow:row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: initial;
+
+      margin: 0 .5em 0 4em;
+
+  }
+         
+  .main .h3{
+      color: var(--claro);
+  }
+  .main .h4{
+    margin: 0 0 0 0;
+  }
+  .main .h5{}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+
+    
+    /* background-color: lightgreen; */
+
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+.footer .centrado{
+    width: 90%;
+    /* background-color: lightpink; */
+    margin: 1em auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer .mi{}
+.footer .social{}
+.footer .rrss{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer .red-social{
+        margin: 0 1em;
+
+        font-size: 1.3em;
+}
+.footer .contacto{}
+
+ 
