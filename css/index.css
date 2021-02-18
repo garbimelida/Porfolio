@@ -11,7 +11,7 @@
     --fondo:#fceecc;
     --azul: #395370;
     --naranja: #efbb3f;
-    --claro: #fceecc;
+    --medio:#fbdf9c;
   }
   
   a {
@@ -221,7 +221,7 @@
     
   }
   .main .p1{
-      color: var(--claro);
+      color: var(--fondo);
       
   }
   .main .p2{
@@ -243,7 +243,7 @@
   }
          
   .main .h3{
-      color: var(--claro);
+      color: var(--fondo);
   }
   .main .h4{
     margin: 0 0 0 0;
