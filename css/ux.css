@@ -10,7 +10,7 @@
     --tipo2: "Poppins", sans-serif;
     --fondo:#fceecc;
     --azul: #395370;
-    --naranja: #efbb3f;
+    --naranja: #f7bc35;
     --medio:#fbdf9c;
   }
   
@@ -187,13 +187,10 @@
   }
 
   .main .texto{
-    width: 100%%;
+    /* width: 100%; */
     /* background-color: lightskyblue; */
-    margin: auto;
-    
-
-    
-
+    margin:auto;
+  
     font-weight: 600;
     font-size: 3em;
 
