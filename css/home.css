@@ -74,8 +74,8 @@
 
 
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
       align-items: center;
       align-content: initial;
     
@@ -304,7 +304,7 @@
 .footer .mi:hover{
     color: var(--naranja);
   }
-}
+  
 .footer .social{}
 .footer .rrss{
 
