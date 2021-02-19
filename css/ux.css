@@ -163,6 +163,8 @@
       align-items: center;
       align-content: initial;
 
+      color: var(--naranja);
+
     
   }
 
@@ -176,7 +178,7 @@
   
     
     display: flex;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
     justify-content: center;
     align-items: center;
     align-content: initial;
@@ -184,22 +186,25 @@
 
   }
 
-  .main .cuadrados{
-    width: 90%;
+  .main .texto{
+    width: 100%%;
     /* background-color: lightskyblue; */
+    margin: auto;
+    
 
-    display: flex;
-    flex-flow:row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: initial;
+    
 
     font-weight: 600;
     font-size: 3em;
 
   }
 
-  .main .ficha{
+  .main .imagen{
+    /* background-color: lightcoral; */
+    width: 35%;
+  }
+
+  /* .main .ficha{
     width: 25%;
     height: 55vh;
     
@@ -240,7 +245,7 @@
   }
   .main .amarillo:hover .p{
     color: var(--azul);
-  }
+  } */
 
 
 
