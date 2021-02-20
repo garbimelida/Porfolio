@@ -8,9 +8,10 @@
   :root {
     --tipo1: "Poppins", sans-serif;
     --tipo2: "Poppins", sans-serif;
-    --fondo:#fceecc;
-    --azul: #395370;
-    --naranja: #f7bc35;
+
+    --fondo:#f7f0df;
+    --azul: #003a7b;
+    --naranja: #f8c03d;
     --medio:#fbdf9c;
   }
   

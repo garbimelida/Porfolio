@@ -8,9 +8,10 @@
   :root {
     --tipo1: "Poppins", sans-serif;
     --tipo2: "Poppins", sans-serif;
-    --fondo:#fceecc;
-    --azul: #395370;
-    --naranja: #efbb3f;
+
+    --fondo:#f7f0df;
+    --azul: #003a7b;
+    --naranja: #f8c03d;
     --medio:#fbdf9c;
   }
   
@@ -169,7 +170,7 @@
 
   .main .centrado{
     width: 90%;
-    margin: auto;
+    margin:auto;
     /* background-color: hotpink; */
     
 
@@ -197,27 +198,38 @@
       display: flex;
       flex-flow:row nowrap;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       align-content: initial;
 
   }
 
-  .main .colores{
-      width: 100%;
-      height: 44em;
-      padding: .5em 0 0 0;
+  .main .circulo{
+    width:45%;
+    height: 30em;
+    background-color: var(--naranja);
+
+    border-radius: 50%;
+
+    position: relative;
+      
     
   }
 
 
 
   .main .texto{
+    width: 30%;
     /* background-color: blueviolet; */
-    margin: 0 0 5em 3.5em;
-    
-    position: absolute;
+    padding: 5.5em 0;
 
     font-weight: 600;
+
+    position: absolute;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
 
 
 
@@ -228,44 +240,31 @@
       /* background-color: mediumaquamarine; */
 
       display: flex;
-      flex-flow:row nowrap;
+      flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
       align-content: initial;
 
-      font-size: 3em;
-
+      
     
   }
+
   .main .p1{
-      color: var(--fondo);
-      
+    color:var(--medio);
+    /* background-color: violet; */
+    
+    font-size: 4em;
   }
-  .main .p2{
-    margin: 0 .3em 0;
+  .main .h2{
+    /* background-color: green; */
+    font-size: 4em;
   }
-  .main .h2{}
 
   .main .texto2{
-      /* background-color:lightpink; */
-
-      display: flex;
-      flex-flow:row nowrap;
-      justify-content: space-between;
-      align-items: center;
-      align-content: initial;
-
-      margin: 0 .5em 0 4em;
-
+    /* background-color: yellow; */
   }
-         
-  .main .h3{
-      color: var(--fondo);
-  }
-  .main .h4{
-    margin: 0 0 0 0;
-  }
-  .main .h5{}
+  
+
 
 
 
