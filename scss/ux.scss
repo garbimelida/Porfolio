@@ -62,7 +62,9 @@
 
 
 
-/* ESTO ES LA CABEZERA */
+
+  /* ESTO ES LA CABECERA */
+
   .header{
     width: 100%;
     padding: .5em 0;
@@ -132,10 +134,13 @@
   }
   
   .header .li{
-    width: 100%;
     margin: 0 0 0 1em;
   }
-
+  
+  /* .header .proyectos{
+    background-color: hotpink;
+    
+  } */
   
   header .a:hover{
     color: var(--naranja);
@@ -147,9 +152,7 @@
 
 
 
-
-
-/* ESTO ES EL CUERPO  */
+/* ESTO ES EL CUERPO */
 
   .main{
       width: 100%;
@@ -164,94 +167,47 @@
       justify-content: center;
       align-items: center;
       align-content: initial;
+
+      color: var(--naranja);
+
     
   }
+
 
   .main .centrado{
     width: 90%;
-    margin:auto;
+    margin: auto;
     /* background-color: hotpink; */
+    
 
+  
+    
     display: flex;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
     justify-content: center;
     align-items: center;
     align-content: initial;
-
-  }
-
-  .main .fondo{
-    width: 70%;
-    /* background-color: lightskyblue; */
-    margin:auto;
 
     animation: aparecer1 4s ease 1 both;
 
-
   }
-
-
-
-  .main .circulo{
-    width: 55%;
-    height: 65vh;
-    margin:auto;
-    
-    background-color:var(--naranja);
-
-    border-radius: 50%;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: initial;
-
-  }
-
-
 
   .main .texto{
-    width: 80%;
-    /* background-color: blueviolet; */
+    /* width: 100%; */
+    /* background-color: lightskyblue; */
+    margin:auto;
   
-    
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: initial;
-    align-content: center;
-
-    
-
     font-weight: 600;
-    
+    font-size: 2.5em;
+
   }
 
-  .main .p1{
-    color:var(--medio);
-    /* background-color: violet; */
-    margin: auto;
-    font-size: 3.5em;
+  .main .imagen{
+    /* background-color: lightcoral; */
+    width: 30%;
   }
-  .main .h2{
+
   
-    /* background-color: green; */
-    margin: auto;
-    font-size: 4em;
-  }
-
-  .main .h3{
-    /* background-color: green; */
-    margin: 0 auto 4em;
-  }
-
-  /* .main .texto2{
-    background-color: yellow;
-  }
-   */
-
 
 
 
@@ -290,9 +246,7 @@
 .footer .mi:hover{
     color: var(--naranja);
   }
-  
-
-
+/* .footer .social{} */
 .footer .rrss{
 
     display: flex;
@@ -305,11 +259,10 @@
 
         font-size: 1em;
 }
+
 .footer .red-social:hover{
   color: var(--naranja);
 }
-
-
 .footer .contacto:hover{
     color: var(--naranja);
   
@@ -319,13 +272,7 @@
 
 
 
-
-
-/* ESTO ES RESPONSIVE-MOVIL */
-
-
-
-
+  /* ESTO ES RESPONSIVE */
  
   @media screen and (max-width:915px){
 
@@ -371,6 +318,7 @@
     }
 
     .header .ul{
+      
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
@@ -381,35 +329,17 @@
     }
 
     .header .li{
+      width: 100%;
       margin: 1.5em 0;
     }
 
-  
 
 
-
-
-
-    .main .fondo{
+    .main .imagen{
       width: 100%;
-      padding: 0 0 5em 0;
     }
 
-    .main .circulo{
-      width: 95%;
-      height: 45vh;
-      
-    }
-   
-    .main .p1{
-      font-size: 3em;
-    }
 
-    .main .h2{
-      font-size: 3.4em;
-    }
-  
-  
 
 
 
@@ -426,27 +356,14 @@
   }
 
 
-  @media screen and (min-width: 768px) and (max-width: 1024px){
-
-    .main .circulo{
-
-      width: 65%;
-  
-  
-      
-    }
-
-    
-  }
-
-
   @keyframes aparecer1{
-    0% {
-      transform: scale(0.0);
-      -webkit-transform: scale(0.0);
+    from{
+      
+      opacity: 0;
   }
-  100% {
-      transform: scale(1.0);
-      -webkit-transform: scale(1.0);
-  }
+  to{
+      
+      opacity: 1;
+  } 
+
 }
