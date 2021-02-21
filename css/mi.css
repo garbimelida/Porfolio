@@ -203,6 +203,7 @@ header .a:hover{
 
   .main .texto{
     /* background-color: springgreen; */
+    width: 80%;
 
     display: flex;
     flex-flow:column wrap;
@@ -212,7 +213,7 @@ header .a:hover{
   }
 
   .main .presentacion{
-    margin: auto;
+   
     font-weight: 600;
       font-size: 2em;
 
@@ -222,7 +223,9 @@ header .a:hover{
   }
 
   .main .proximamente{
-    margin: auto;
+
+    margin: 1em 0;
+  
 
     font-weight: 600;
     font-size: 1.2em;
