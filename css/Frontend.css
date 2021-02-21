@@ -384,7 +384,7 @@
       /* background-color: yellow; */
   
 
-      gap: .7em;
+      gap: .2em;
   
       display: flex;
       flex-flow: column nowrap;
@@ -396,6 +396,7 @@
 
     .main .article{
       width: 80%;
+      margin: 1em 0 0 0;
     }
 
 
