@@ -62,14 +62,14 @@
 
 
 
-
+/* ESTO ES LA CABEZERA */
   .header{
     width: 100%;
     padding: .5em 0;
         
     background-color:var(--fondo);
   
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
   
@@ -135,11 +135,7 @@
     width: 100%;
     margin: 0 0 0 1em;
   }
-  
-  .header .proyectos{
-    /* background-color: hotpink; */
-    
-  }
+
   
   header .a:hover{
     color: var(--naranja);
@@ -149,6 +145,11 @@
 
 
 
+
+
+
+
+/* ESTO ES EL CUERPO  */
 
   .main{
       width: 100%;
@@ -165,7 +166,6 @@
       align-content: initial;
     
   }
-
 
   .main .centrado{
     width: 90%;
@@ -185,8 +185,12 @@
     /* background-color: lightskyblue; */
     margin:auto;
 
+    animation: aparecer1 4s ease 1 both;
+
 
   }
+
+
 
   .main .circulo{
     width: 55%;
@@ -243,16 +247,16 @@
     margin: 0 auto 4em;
   }
 
-  .main .texto2{
-    /* background-color: yellow; */
+  /* .main .texto2{
+    background-color: yellow;
   }
-  
+   */
 
 
 
 
 
-
+/* ESTO ES EL PIE */
 
 .footer{
     width: 100%;
@@ -287,7 +291,8 @@
     color: var(--naranja);
   }
   
-.footer .social{}
+
+
 .footer .rrss{
 
     display: flex;
@@ -300,10 +305,11 @@
 
         font-size: 1em;
 }
-
 .footer .red-social:hover{
   color: var(--naranja);
 }
+
+
 .footer .contacto:hover{
     color: var(--naranja);
   
@@ -312,6 +318,10 @@
 
 
 
+
+
+
+/* ESTO ES RESPONSIVE-MOVIL */
 
 
 
@@ -414,3 +424,29 @@
 
     
   }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .main .circulo{
+
+      width: 65%;
+  
+  
+      
+    }
+
+    
+  }
+
+
+  @keyframes aparecer1{
+    0% {
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+  }
+  100% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+  }
+}

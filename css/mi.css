@@ -61,6 +61,8 @@
 
 
 
+/* ESTO ES LA CABECERA */
+
 
 
 .header{
@@ -69,7 +71,7 @@
       
   background-color:var(--fondo);
 
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0;
 
@@ -135,10 +137,10 @@ header .nav{
   margin: 0 0 0 1em;
 }
 
-.header .proyectos{
-  /* background-color: hotpink; */
+/* .header .proyectos{
+  background-color: hotpink;
   
-}
+} */
 
 header .a:hover{
   color: var(--naranja);
@@ -148,6 +150,7 @@ header .a:hover{
 
 
 
+/* ESTO ES EL CUERPO */
 
   .main{
       width: 100%;
@@ -180,8 +183,8 @@ header .a:hover{
     justify-content: space-around;
     align-items: center;
     align-content: initial;
-  
 
+    animation: aparecer1 4s ease 1 both;
     
   }
 
@@ -199,14 +202,17 @@ header .a:hover{
   }
 
   .main .texto{
-    width: 100%;
-    
+    /* background-color: springgreen; */
 
-  
-    /* background-color: lightseagreen; */
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: initial;
   }
 
   .main .presentacion{
+    margin: auto;
     font-weight: 600;
       font-size: 2em;
 
@@ -216,8 +222,7 @@ header .a:hover{
   }
 
   .main .proximamente{
-    /* background-color: wheat; */
-    margin: 5em;
+    margin: auto;
 
     font-weight: 600;
     font-size: 1.2em;
@@ -229,7 +234,7 @@ header .a:hover{
 
   
 
-
+/* ESTO ES EL PIE */
 
 
 
@@ -266,7 +271,7 @@ header .a:hover{
     color: var(--naranja);
 
 }
-.footer .social{}
+/* .footer .social{} */
 .footer .rrss{
 
     display: flex;
@@ -374,23 +379,29 @@ header .a:hover{
 
     .main .columna{
       /* background-color: indigo; */
+      width: 100%;
+    }
+
+    .main .texto{
       width: 90%;
-      
+      margin: auto;
+      padding:0 0 2.5em 0 ;
+      /* background-color: springgreen; */
+
+      display: flex;
+      flex-flow:column wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+    }
+
+    .main .presentacion {
+      margin: .5em 0;
+      font-size: 3em;
     
     }
 
-    .main .yo{
-      padding: 2em;
-    } 
-    .main .presentacion {
-      margin: 0 2em;
-    }
 
-    .main .proximamente{
-      /* background-color: wheat; */
-      margin: 4em;
-
-    }
 
     
 
@@ -402,3 +413,15 @@ header .a:hover{
 
     
   }
+
+  @keyframes aparecer1{
+    from{
+      
+      opacity: 0;
+  }
+  to{
+      
+      opacity: 1;
+  } 
+
+}

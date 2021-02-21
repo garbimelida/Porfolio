@@ -63,13 +63,15 @@
 
 
 
+  /* ESTO ES LA CABECERA */
+
   .header{
     width: 100%;
     padding: .5em 0;
         
     background-color:var(--fondo);
   
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
   
@@ -135,10 +137,10 @@
     margin: 0 0 0 1em;
   }
   
-  .header .proyectos{
-    /* background-color: hotpink; */
+  /* .header .proyectos{
+    background-color: hotpink;
     
-  }
+  } */
   
   header .a:hover{
     color: var(--naranja);
@@ -150,7 +152,7 @@
 
 
 
-
+/* ESTO ES EL CUERPO */
 
   .main{
       width: 100%;
@@ -186,6 +188,7 @@
     align-items: center;
     align-content: initial;
 
+    animation: aparecer1 4s ease 1 both;
 
   }
 
@@ -208,6 +211,8 @@
 
 
 
+
+/* ESTO ES EL PIE */
 
 .footer{
     width: 100%;
@@ -241,7 +246,7 @@
 .footer .mi:hover{
     color: var(--naranja);
   }
-.footer .social{}
+/* .footer .social{} */
 .footer .rrss{
 
     display: flex;
@@ -263,6 +268,11 @@
   
   }
 
+
+
+
+
+  /* ESTO ES RESPONSIVE */
  
   @media screen and (max-width:915px){
 
@@ -344,3 +354,16 @@
 
     
   }
+
+
+  @keyframes aparecer1{
+    from{
+      
+      opacity: 0;
+  }
+  to{
+      
+      opacity: 1;
+  } 
+
+}

@@ -62,7 +62,7 @@
 
 
 
-
+/* ESTO ES LA CABECERA */
   
   .header{
     width: 100%;
@@ -70,7 +70,7 @@
         
     background-color:var(--fondo);
   
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
   
@@ -136,10 +136,10 @@
     margin: 0 0 0 1em;
   }
   
-  .header .proyectos{
-    /* background-color: hotpink; */
+  /* .header .proyectos{
+    background-color: hotpink;
     
-  }
+  } */
   
   header .a:hover{
     color: var(--naranja);
@@ -152,7 +152,7 @@
 
 
 
-
+/* ESTO ES EL CUERPO */
 
 
   .main{
@@ -187,6 +187,8 @@
     align-items: center;
     align-content: initial;
 
+    animation: aparecer1 2s ease 1 both;
+
 
   }
 
@@ -202,6 +204,8 @@
 
     font-weight: 600;
     font-size: 3em;
+
+    
 
   }
 
@@ -219,6 +223,8 @@
     align-items: center;
     align-content: initial;
 
+    
+
   }
 
 
@@ -233,7 +239,9 @@
 
   .main .naranja{
     background-color: var(--naranja);
-    color:var(--azul)
+    color:var(--azul);
+
+  
   }
 
   .main .naranja:hover .p2{
@@ -243,6 +251,8 @@
   .main .amarillo{
     background-color: var(--medio);
     color: var(--naranja);
+
+    
   }
   .main .amarillo:hover .p3{
     color: var(--azul);
@@ -257,12 +267,11 @@
 
 
 
-
+/* ESTO ES EL PIE */
 
 .footer{
     width: 100%;
 
-    
     /* background-color: lightgreen; */
 
     position: absolute;
@@ -291,7 +300,10 @@
 .footer .mi:hover{
     color: var(--naranja);
   }
-.footer .social{}
+
+
+
+/* .footer .social{} */
 .footer .rrss{
 
     display: flex;
@@ -312,16 +324,20 @@
     color: var(--naranja);
   
   }
-
  
 
 
- 
+
+
+
+/* ESTO ES RESPONSIVE */
+
+
+
   @media screen and (max-width:915px){
 
-    
-
-    .header .proyectos{
+  
+  .header .proyectos{
       display: none;
     }
    
@@ -331,6 +347,8 @@
         
     }
     .header .centrado{
+      /* background-color: brown; */
+      
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
@@ -377,16 +395,14 @@
 
   
 
-
-
-
-
     .main .cuadrados{
-    display: flex;
-    flex-flow:column nowrap;
-    justify-content: center;
-    align-items: space-between;
-    align-content: initial;
+      /* background-color: hotpink; */
+      width: 90%;
+      display: flex;
+      flex-flow:column nowrap;
+      justify-content: center;
+      align-items: space-between;
+      align-content: initial;
     }
 
     .main .ficha{
@@ -397,9 +413,6 @@
       border-radius:20% ;
 
     }
-  
-  
-
 
 
 
@@ -409,7 +422,31 @@
       display:none;
     }
 
-    
 
     
+  }
+
+
+
+
+
+  @keyframes aparecer1{
+
+    from{
+      transform: rotateX(-180deg);
+      -webkit-transform: rotateX(-180deg); 
+
+      opacity: 0;
+    
+        
+     }
+    to{
+        transform: rotateX(0);
+        -webkit-transform: rotateX(0);
+
+        opacity: 1;
+    
+       } 
+
+
   }

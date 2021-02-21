@@ -10,20 +10,14 @@ icono.addEventListener("click",function(){
 })
 
 
-const foto = document.querySelector(".img")
-const grande = document.querySelector(".lightbox")
-const equis = document.querySelector(".fas.fa-times")
 
-foto.addEventListener("click",function(){
-    grande.classList.toogle("ver")
-
-} )
-
-$('.article').click( ()=>{
+// Cuando hago click en .miniatura, .lightbox cambie display: flex
+$('.img').click( ()=>{
     $('.lightbox').css({ 'display' : 'flex' })
   })
   
   
-$('.fas.fa-times').click( ()=>{
+  // Cuando hago click .fa-times, .lightbox cambie display: none
+  $('.fa-times').click( ()=>{
     $('.lightbox').css({ 'display' : 'none '})
-})
+  })
