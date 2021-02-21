@@ -9,9 +9,9 @@
     --tipo1: "Poppins", sans-serif;
     --tipo2: "Poppins", sans-serif;
 
-    --fondo:#f7f0df;
+    --fondo:#faf6ed;
     --azul: #003a7b;
-    --naranja: #f8c03d;
+    --naranja: #f7bc35;
     --medio:#fbdf9c;
   }
   
@@ -64,48 +64,41 @@
 
 
   .header{
-      width: 100%;
-      padding: 1em 0;
-      
-      /* background-color:green; */
-
-      position: absolute;
-      z-index: 2;
-      top: 0;
-
-
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-end;
-      align-items: center;
-      align-content: initial;
-    
-    
-      font-weight: 600;
-      font-size: 1.3em;
-      text-transform: uppercase;
-  }
-  .header .centrado{
-        width: 90%;
+    width: 100%;
+    padding: .5em 0;
         
-       
-        /* background-color: lightcoral; */
-        margin: auto;
-
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: initial;
-  }
-
-  .header .h1{
-      width: 8%;
-      /* background-color: lightcyan; */
-      
-  } 
+    background-color:var(--fondo);
   
-
+    position: absolute;
+    z-index: 2;
+    top: 0;
+  
+    font-weight: 600;
+    font-size: 1.3em;
+    text-transform: uppercase;
+  
+  }
+  
+  .header .centrado{
+    width: 90%;
+   
+    /* background-color: lightcoral; */
+    margin: auto;
+  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    align-content: initial;
+  
+  
+  }
+  
+  .header .h1{
+    width: 4.5em;
+    /* background-color: lightcyan; */
+  
+  } 
   header .logo:hover{
   
     -webkit-transform: scale(1.3);
@@ -114,38 +107,44 @@
     -ms-transform: scale(1.3);
     transform: scale(1.3)
   }
-
-  header .a:hover{
-    color: var(--naranja);
-
-  }
-
-
-
-  .header .proyectos{
-    width: 10%;
+  
+  
+  .header .fas{
+    font-size: 1.3em;
     
-    /* background-color: lightcyan; */
-
+    display: none;
+  
+  }
+  
+  header .nav{
+    /* background-color: red; */
+    display: none;
+  }
+  
+  .header .ul{
+  
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items:center;
     align-content: initial;
-
+  
   }
-
-  .header .a{
-      width: 100%;
-      /* background-color: lightblue; */
-      margin:auto;
+  
+  .header .li{
+    margin: 0 0 0 1em;
   }
-
+  
+  .header .proyectos{
+    /* background-color: hotpink; */
+    
+  }
+  
   header .a:hover{
     color: var(--naranja);
+  
   }
-
-
+  
 
 
 
@@ -163,7 +162,6 @@
       justify-content: center;
       align-items: center;
       align-content: initial;
-
     
   }
 
@@ -172,92 +170,76 @@
     width: 90%;
     margin:auto;
     /* background-color: hotpink; */
-    
 
-  
-    
     display: flex;
     flex-flow:row nowrap;
     justify-content: center;
     align-items: center;
     align-content: initial;
 
-    /* position: absolute; */
-
-    
-
   }
 
-
-
   .main .fondo{
-      width: 100%;
-      /* background-color: blue; */
-      margin: auto;
+    width: 70%;
+    /* background-color: lightskyblue; */
+    margin:auto;
 
-      display: flex;
-      flex-flow:row nowrap;
-      justify-content: center;
-      align-items: flex-start;
-      align-content: initial;
 
   }
 
   .main .circulo{
-    width:45%;
-    height: 30em;
-    background-color: var(--naranja);
+    width: 55%;
+    height: 65vh;
+    margin:auto;
+    
+    background-color:var(--naranja);
 
     border-radius: 50%;
 
-    position: relative;
-      
-    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+
   }
 
 
 
   .main .texto{
-    width: 30%;
+    width: 80%;
     /* background-color: blueviolet; */
-    padding: 5.5em 0;
-
-    font-weight: 600;
-
-    position: absolute;
+  
+    
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
-
+    justify-content: center;
+    align-items: initial;
+    align-content: center;
 
     
-  }
 
-  .main .texto1{
-      /* background-color: mediumaquamarine; */
-
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: initial;
-
-      
+    font-weight: 600;
     
   }
 
   .main .p1{
     color:var(--medio);
     /* background-color: violet; */
-    
-    font-size: 4em;
+    margin: auto;
+    font-size: 3.5em;
   }
   .main .h2{
+  
     /* background-color: green; */
+    margin: auto;
     font-size: 4em;
+  }
+
+  .main .h3{
+    /* background-color: green; */
+    margin: 0 auto 4em;
   }
 
   .main .texto2{
@@ -326,4 +308,108 @@
   
   }
 
+
+
+
+
+
+
+
  
+  @media screen and (max-width:915px){
+
+    
+
+    .header .proyectos{
+      display: none;
+    }
+   
+    .header .fas{
+      display: flex;
+      /* font-size: 2em; */
+        
+    }
+    .header .centrado{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: initial;
+    }
+
+    .header .nav{
+      /* background-color: aliceblue; */
+      width: 100%;
+      height: 90vh;
+      
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: initial;
+
+      background-color: var(--fondo);
+
+      display: none;
+
+    
+    }
+    .header .nav.ver{
+      display: flex;
+
+    }
+
+    .header .ul{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+      margin: 1.5em 0;
+      
+    }
+
+    .header .li{
+      margin: 1.5em 0;
+    }
+
+  
+
+
+
+
+
+    .main .fondo{
+      width: 100%;
+      padding: 0 0 5em 0;
+    }
+
+    .main .circulo{
+      width: 95%;
+      height: 45vh;
+      
+    }
+   
+    .main .p1{
+      font-size: 3em;
+    }
+
+    .main .h2{
+      font-size: 3.4em;
+    }
+  
+  
+
+
+
+
+    
+
+    .footer{
+      display:none;
+    }
+
+    
+
+    
+  }

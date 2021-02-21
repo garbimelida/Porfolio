@@ -9,9 +9,9 @@
     --tipo1: "Poppins", sans-serif;
     --tipo2: "Poppins", sans-serif;
 
-    --fondo:#f7f0df;
+    --fondo:#faf6ed;
     --azul: #003a7b;
-    --naranja: #f8c03d;
+    --naranja: #f7bc35;
     --medio:#fbdf9c;
   }
   
@@ -63,88 +63,87 @@
 
 
 
-  .header{
-      width: 100%;
-      padding: 1em 0;
+.header{
+  width: 100%;
+  padding: .5em 0;
       
-      /* background-color:green; */
+  background-color:var(--fondo);
 
-      position: absolute;
-      z-index: 2;
-      top: 0;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+
+  font-weight: 600;
+  font-size: 1.3em;
+  text-transform: uppercase;
+
+}
+
+.header .centrado{
+  width: 90%;
+ 
+  /* background-color: lightcoral; */
+  margin: auto;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:center;
+  align-content: initial;
 
 
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: initial;
-    
-    
-      font-weight: 600;
-      font-size: 1.3em;
-      text-transform: uppercase;
-  }
-  .header .centrado{
-        width: 90%;
-        
-       
-        /* background-color: lightcoral; */
-        margin: auto;
+}
 
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: initial;
-  }
+.header .h1{
+  width: 4.5em;
+  /* background-color: lightcyan; */
 
-  .header .h1{
-      width: 8%;
-      /* background-color: lightcyan; */
-      
-  } 
+} 
+header .logo:hover{
+
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3)
+}
+
+
+.header .fas{
+  font-size: 1.3em;
   
+  display: none;
 
-  header .logo:hover{
+}
+
+header .nav{
+  /* background-color: red; */
+  display: none;
+}
+
+.header .ul{
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items:center;
+  align-content: initial;
+
+}
+
+.header .li{
+  margin: 0 0 0 1em;
+}
+
+.header .proyectos{
+  /* background-color: hotpink; */
   
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3)
-  }
+}
 
-  header .a:hover{
-    color: var(--naranja);
+header .a:hover{
+  color: var(--naranja);
 
-  }
-
-
-
-  .header .proyectos{
-    width: 10%;
-    
-    /* background-color: lightcyan; */
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-end;
-    align-content: initial;
-
-  }
-
-  .header .a{
-      width: 100%;
-      /* background-color: lightblue; */
-      margin:auto;
-  }
-
-  header .a:hover{
-    color: var(--naranja);
-  }
-
+}
 
 
 
@@ -159,7 +158,7 @@
       z-index:1;
 
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
       align-content: initial;
@@ -172,27 +171,36 @@
 
 
   .main .centrado{
-    width: 65%;
+    width: 75%;
     margin: auto;
     /* background-color: hotpink; */
     
     display: flex;
-    flex-flow:row nowrap;
+    flex-flow:row wrap;
     justify-content: space-around;
     align-items: center;
     align-content: initial;
+  
 
     
   }
 
-  .main .foto{
-    width: 40%;
-    /* background-color:lightsalmon; */
+  .main .columna{
+    /* background-color: wheat; */
+    width: calc(100% / 2);
+
   }
+
+
+  .main .yo{
+    width: 100%;
+    /* background-color:rgb(116, 116, 116); */
+    padding: 4em;
+  }
+
   .main .texto{
-    width: 55%;
-    margin: 0 1em 0 0;
-    padding: 1em;
+    width: 100%;
+    
 
   
     /* background-color: lightseagreen; */
@@ -200,7 +208,7 @@
 
   .main .presentacion{
     font-weight: 600;
-      font-size: 1.5em;
+      font-size: 2em;
 
   }
   .main .p{
@@ -208,8 +216,14 @@
   }
 
   .main .proximamente{
+    /* background-color: wheat; */
+    margin: 5em;
+
     font-weight: 600;
-    margin:2em 6em 0;
+    font-size: 1.2em;
+
+
+    display: inline;
   }
 
 
@@ -223,9 +237,9 @@
     width: 100%;
 
     
-    /* background-color: lightgreen; */
+    background-color: var(--fondo);
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 3;
 
@@ -274,4 +288,116 @@
   
   }
 
+
+
+
+
+
+
+
+
+
  
+  @media screen and (max-width:915px){
+
+    
+
+    .header .proyectos{
+      display: none;
+    }
+   
+    .header .fas{
+      display: flex;
+      /* font-size: 2em; */
+        
+    }
+    .header .centrado{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: initial;
+    }
+
+    .header .nav{
+      /* background-color: aliceblue; */
+      width: 100%;
+      height: 90vh;
+      
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: initial;
+
+      background-color: var(--fondo);
+
+      display: none;
+
+    
+    }
+    .header .nav.ver{
+      display: flex;
+
+    }
+
+    .header .ul{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+      margin: 1.5em 0;
+      
+    }
+
+    .header .li{
+      margin: 1.5em 0;
+    }
+
+  
+
+
+    .main .centrado{
+      /* background-color: hotpink; */
+      width: 100%;
+      min-height:100vh;
+      padding:5em 0 0 0;
+
+      display: flex;
+      flex-flow:column wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: initial;
+    }
+
+    .main .columna{
+      /* background-color: indigo; */
+      width: 90%;
+      
+    
+    }
+
+    .main .yo{
+      padding: 2em;
+    } 
+    .main .presentacion {
+      margin: 0 2em;
+    }
+
+    .main .proximamente{
+      /* background-color: wheat; */
+      margin: 4em;
+
+    }
+
+    
+
+    .footer{
+      display:none;
+    }
+
+    
+
+    
+  }
