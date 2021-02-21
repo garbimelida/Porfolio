@@ -370,6 +370,7 @@ color: var(--naranja);
   }
 
   .header .li{
+    width: 100%;
     margin: 1.5em 0;
   }
 
