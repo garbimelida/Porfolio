@@ -141,7 +141,8 @@ header .a:hover {
 .main .centrado {
   width: 70%;
   /* background-color: hotpink; */
-  margin: 4em 0 0 0;
+  margin: 5em 0 0 0;
+  padding: 0 0 1em 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -162,7 +163,7 @@ header .a:hover {
 
 .main .texto {
   width: 50%;
-  margin: 0 1em 0 0;
+  margin: 0 1em 0 1em;
   padding: 1em;
   /* background-color: lightseagreen; */
 }
