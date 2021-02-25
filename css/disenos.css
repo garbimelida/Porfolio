@@ -12,6 +12,7 @@
   --azul: #003a7b;
   --naranja: #f7bc35;
   --medio:#fbdf9c;
+  --pop: #00397bd0;;
 }
 
 a {
@@ -99,7 +100,7 @@ header .logo:hover {
 }
 
 .header .fas {
-  font-size: 1.3em;
+  font-size: 1.5em;
   display: none;
 }
 
@@ -186,10 +187,12 @@ header .a:hover {
   width: 100%;
   height: 100%;
   background: var(--blanco-alpha);
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+
   transition: all 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -205,33 +208,48 @@ header .a:hover {
   cursor: pointer;
 }
 
-/* .main .lightbox{
-width:30%;
-margin: auto;
+.lightbox{
+  width:100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  z-index: 4;
+  
+  
+  background-color:var(--pop);
+  
+  display:flex; 
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: initial;
 
-background-color: var(--azul);
+  color:white;
 
-position: fixed;
-z-index: 4;
-top: 0;
+  display: none;
+}
 
+.lightbox .limi{
+  width: 30%;
+  margin: 1em;
 
-display:none;
-flex-flow: column nowrap;
-justify-content: center;
-align-items: center;
-align-content: initial;
-
-color:var(--naranja);
+}
+.lightbox.ver{
+  display: flex;
 }
 .lightbox .fa-times{
-font-size: 2em;
-margin: 1em;
-cursor: pointer;
+  font-size: 2em;
+  cursor: pointer;
 }
-.main .lightbox .img{
-max-width: 900px;
-} */
+.lightbox img{
+  max-width: 900px;
+}
+
+
+
+
+
+
 /* ESTO ES EL PIES */
 .footer {
   width: 100%;
@@ -298,6 +316,7 @@ max-width: 900px;
     align-content: initial;
   }
 
+
   .header .nav {
     /* background-color: aliceblue; */
     width: 100%;
@@ -352,6 +371,12 @@ max-width: 900px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+  }
+
+  .lightbox .limi{
+    width: 80%;
+    margin: 1em;
+  
   }
 
   .footer {

@@ -1,23 +1,53 @@
 "use strict"
 
 
-const icono = document.querySelector(".fas")
-const nav = document.querySelector(".nav")
+const icono = document.querySelector(".fa-bars");
+const nav = document.querySelector(".nav");
 
 icono.addEventListener("click",function(){
     nav.classList.toggle("ver")
 
 })
 
+ 
 
 
-// Cuando hago click en .miniatura, .lightbox cambie display: flex
-$('.img').click( ()=>{
-    $('.lightbox').css({ 'display' : 'flex' })
-  })
+
+var foto  = document.querySelectorAll(".article");
+var img   = document.querySelectorAll(".lightbox");
+var equis = document.querySelectorAll(".fa-times");
+
+foto.forEach(function (cadaIMG, i) {
+  foto[i].addEventListener('click', function () {
+    img[i].classList.add('ver');
+  });
+});
+
+equis.forEach(function (cadaIMG, i) {
+    equis[i].addEventListener('click', function () {
+      img[i].classList.remove('ver');
+    });
+  });
+
   
+
+
+
+// const foto  = document.querySelector(".article")
+// const img   = document.querySelector(".lightbox")
+// const equis = document.querySelector(".fa-times")
+
+
+
+// foto.addEventListener("click",function(){
+//     img.classList.add("ver")
+
+// })
+
+// equis.addEventListener("click",function(){
+//   img.classList.remove("ver")
+
+// })
   
-  // Cuando hago click .fa-times, .lightbox cambie display: none
-  $('.fa-times').click( ()=>{
-    $('.lightbox').css({ 'display' : 'none '})
-  })
+
+
